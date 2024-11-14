@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PingMe</title>
+    <link rel="stylesheet" href="style.css">
+
+        <link rel="apple-touch-icon" href="images.png" sizes="180x180">
+       <!-- Link to Favicon -->
+        <link rel="icon" href="images.png" type="image/x-icon">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar for contacts -->
+        <div class="sidebar">
+            <div class="header">
+                <span class="app-name">PingMe</span>
+                <div class="user-info">
+                    <!-- User's profile picture -->
+                    <img src="pexels-isabellamariana-1988686.jpg" alt="user-avatar" class="avatar">
+                    <span class="username">User</span>
+                </div>
+            </div>
+
+            <!-- Search bar to filter contacts -->
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search contacts" onkeyup="filterContacts()">
+            </div>
+
+            <div class="contacts" id="contact-list">
+                <!-- Contact 1 -->
+                <div class="contact">
+                    <img src="ann.jpg" alt="contact-avatar" class="contact-avatar">
+                    <span class="contact-name">Ann</span>
+                </div>
+                <!-- Contact 2 -->
+                <div class="contact">
+                    <img src="jane.jpg" alt="contact-avatar" class="contact-avatar">
+                    <span class="contact-name">Jane Smith</span>
+                </div>
+                <!-- Add more contacts here -->
+            </div>
+        </div>
+
+        <!-- Chat window -->
+        <div class="chat-window">
+            <div class="chat-header">
+                <!-- Chat contact's profile picture -->
+                <img src="jondoe.jpg" alt="contact-avatar" class="contact-avatar">
+                <span class="contact-name">John Doe</span>
+            </div>
+            <div class="chat-content">
+                <div class="message left">
+                    <span class="message-text">Hey! How are you?</span>
+                </div>
+                <div class="message right">
+                    <span class="message-text">I'm good, how about you?</span>
+                </div>
+                <!-- Add more messages here -->
+            </div>
+            <!-- Typing Bar -->
+            <div class="typing-bar">
+                <textarea id="message" placeholder="Type a message..."></textarea>
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="sever.js"></script>
+</body>
+</html>
